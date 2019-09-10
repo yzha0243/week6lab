@@ -1,0 +1,45 @@
+<html>
+        <head>
+                <link rel="stylesheet" href="style.css">
+            </head>
+
+
+<body>
+    <h3>
+        <table>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Due</td>
+                <td>Assign</td>
+                <td>Task status</td>
+                <td>Description</td>
+            </tr>
+            <% for ( var i = 0; i < udb.length; i++){ %>
+            <tr>
+                <td>
+                    <%= udb[i].Id %>
+                </td>>
+                <td>
+                    <%= udb[i].Name %>
+                </td>>
+                <td>
+                    <%= udb[i].Due %>
+                </td>
+                <td>
+                        <%= udb[i].Assigned %>
+                </td>
+                <td>
+                        <%= udb[i].Status %>
+                </td>
+                <td>
+                    <%= udb[i].Desc %>
+                </td>
+                
+            </tr>
+            <% }%> 
+    </h3>
+</br>
+<a href="/">main page </a> 
+</body>
+</html>
